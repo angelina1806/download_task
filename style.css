@@ -1,0 +1,10 @@
+table, thead, tbody, tr, td{
+	border:1px solid green;
+	font-size: xx-small;
+}
+
+.tdCl{
+	width: 100px;
+}
+
+

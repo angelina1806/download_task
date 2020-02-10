@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app='myApp'>
+<head>
+	<title> Задача о загрузке</title>
+	<script type="text/javascript" src="bs/angular.min.js"></script>
+    <script type="text/javascript" src="bs/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="bs/xlsx.full.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body ng-controller ='MyController'>
+
+<div>
+	<form enctype="multipart/form-data">
+		<input type="file" id="file">
+		<button type="submit" value="submit" ng-click="uploadExcel()"> &raquo; </button>
+	</form>
+</div>
+
+<div>
+	<table id="table"></table>
+</div>
+<div id="step"></div>
+<script type="text/javascript" src="openFile.js"></script>
+<script type="text/javascript" src="createTableWithSteps.js"></script>
+<script type="text/javascript" src="secondStep.js"></script>
+<script type="text/javascript" src="thirdStep.js"></script>
+<script type="text/javascript" src="findOptimum.js"></script>
+</body>
+</html>
